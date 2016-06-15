@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
     body {
@@ -21,11 +21,18 @@
         padding-bottom: 20px;
     }
     </style>
-    <!--     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/simplex.css"> -->
-    <link rel="stylesheet" href="css/main.css"> |
-    <link rel="stylesheet" href="css/spacelab.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="css/simplex.css"> -->
+    <link rel="stylesheet" href="css/yeti.css">
+    <!-- <link rel="stylesheet" href="css/spacelab.css">
+-->
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    </style>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -33,130 +40,99 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-    <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-              <div class="container">
+    <div id="portatodo">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
                 <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Laburandis</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand
+                        " href="#"><img src="./images/Animals-Pig-icon.png" alt="Laburandis" height="40">
                 </div>
                 <ul class="nav navbar-nav">
-                  <li>
-                    <a href="#">Buscar Trabajo</a>
-                  </li>
-                  <li>
-                    <a href="#">Subir oferta de empleo</a>
-                  </li>
-                  <li>
-                    <a href="#">Noticias</a>
-                  </li>
+                    <li>
+                        <a href="#">Buscar Empleo</a>
+                    </li>
+                    <li>
+                        <a href="#">Subir oferta de empleo</a>
+                    </li>
+                    <li>
+                        <a href="#">Noticias</a>
+                    </li>
                 </ul>
                 <div id="navbar" class="navbar-collapse collapse">
-                  <form class="navbar-form navbar-right" role="form">
-                    <div class="form-group">
-                      <input type="text" placeholder="Email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" placeholder="Password" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-success">Sign in</button>
-                  </form>
-                </div>
-              </div>
-          </nav>-->
-    <!-- Entra bandeja fuera de menu?-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Laburandis</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">Buscar Empleo</a>
-                </li>
-                <li>
-                    <a href="#">Subir oferta de empleo</a>
-                </li>
-                <li>
-                    <a href="#">Noticias</a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <p class="navbar-text">Already have an account?</p>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
-                    <ul id="login-dp" class="dropdown-menu">
+                    <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    Login via
-                                    <div class="social-buttons">
-                                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                    </div>
-                                    or
-                                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                            <div class="help-block text-right"><a href="">Forget the password ?</a></div>
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox"> keep me logged-in
-                                            </label>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="bottom text-center">
-                                    New here ? <a href="#"><b>Join Us</b></a>
-                                </div>
-                            </div>
+                            <a href="#">Ya tenes una cuenta?</a>
                         </li>
-                    </ul>
-        </div>
-    </nav>
-    <nav style="margin-top: 60px;" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Laburandis</a>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+                            <ul id="login-dp" class="dropdown-menu">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            Conectarse con
+                                            <div class="social-buttons">
+                                                <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                                <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                            </div>
+                                            o
+                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Direccion de correo electronico</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword2">Contraseña</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                    <div class="help-block text-right"><a href="">Olvidaste tu contraseña?</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> keep me logged-in
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="bottom text-center">
+                                            New here ? <a href="#"><b>Join Us</b></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                </div>
             </div>
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">Buscar Trabajo</a>
-                </li>
-                <li>
-                    <a href="#">Subir oferta de empleo</a>
-                </li>
-                <li>
-                    <a href="#">Noticias</a>
-                </li>
-            </ul>
+        </nav>
+        <!-- LOGGEADO <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Laburandis</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#">Buscar Trabajo</a>
+            </li>
+            <li>
+                <a href="#">Subir oferta de empleo</a>
+            </li>
+            <li>
+                <a href="#">Noticias</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#"><span class="glyphicon glyphicon-user"></span>  Nombre USUARIO</a>
@@ -164,106 +140,185 @@
                         <li><a href="#"><span class="glyphicon glyphicon-eye-open"></span>  Ir a MiLabunradiPerfil</a></li>
                         <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>  Editar perfil</a></li>
                     </ul>
+                    <li><a href="#"><span class="glyphicon glyphicon-download-alt"></span>  Mensajes</a></li>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Mensajes</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>  Logout</a></li>
             </ul>
-        </div>
-    </nav>
-    <hr>
-    <div id="laburandiscentral" class="opcioncentral">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-2">
-                <h1>QUe te encuentren</h1>
-            </div>
-            <div class="col-md-4">
-                <h1>Encontralos</h1>
-            </div>
-        </div>
-        <footer>
-        </footer>
     </div>
-    <div class="col-sm-9" style="padding-left: 30px;">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Article Title</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-                </p>
-                <div class="text-center">
-                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
-                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 12 Comments</a>
-                    <a href="#"><span class="glyphicon glyphicon-share"></span> 11 Shares</a>
+</nav>
+-->
+        <div id="laburandiscentral" class="opcioncentral">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5" style="margin-top: 135px; float:left">
+                        <ul class="demo-3 ">
+                            <li>
+                                <figure>
+                                    <img src="./images/lupa.png " alt="Buscalaburo " style="margin-left: auto; margin-right: auto" />
+                                    <figcaption>
+                                        <h2>Busca ofertas de trabajo</h2>
+                                        <p>Sumergite dentro de todas las ofertas que estan esperandote</p>
+                                        <div style="margin-top: 20px">
+                                            <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-star"></span> Buscar anuncios</a>
+                                            <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-cloud-upload"></span> Subi tu CV</a>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5" style="margin-top: 135px; float: right; ">
+                        <ul class="demo-3 ">
+                            <li>
+                                <figure>
+                                    <img src="./images/lupar.png " alt="Buscaguachos " style="margin-left: auto; margin-right: auto" />
+                                    <figcaption>
+                                        <h2>Gente que busca gente</h2>
+                                        <p>Sumergite dentro de todas los chongos que estan esperando que los emplees</p>
+                                        <div style="margin-top: 20px">
+                                            <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-cloud-upload"></span> BuscaPebetes</a>
+                                            <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-star"></span> Publica un trabajo</a>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <hr />
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Article Title</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-                </p>
-                <div class="text-center">
-                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
-                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 2 Comments</a>
-                    <a href="#"><span class="glyphicon glyphicon-share"></span> 211 Shares</a>
+        <div class="col-sm-8 " style="padding-left: 30px; ">
+            <div class="row ">
+                <div class="col-xs-12 ">
+                    <h2>Article Title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
+                    </p>
+                    <div class="text-center ">
+                        <a href="# "><span class="glyphicon glyphicon-plus "></span> Full Story</a>
+                        <a href="# "><span class="glyphicon glyphicon-comment "></span> 12 Comments</a>
+                        <a href="# "><span class="glyphicon glyphicon-share "></span> 11 Shares</a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row ">
+                <div class="col-xs-12 ">
+                    <h2>Article Title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
+                    </p>
+                    <div class="text-center ">
+                        <a href="# "><span class="glyphicon glyphicon-plus "></span> Full Story</a>
+                        <a href="# "><span class="glyphicon glyphicon-comment "></span> 2 Comments</a>
+                        <a href="# "><span class="glyphicon glyphicon-share "></span> 211 Shares</a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row ">
+                <div class="col-xs-12 ">
+                    <h2>Article Title</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
+                    </p>
+                    <div class="text-center ">
+                        <a href="# "><span class="glyphicon glyphicon-plus "></span> Full Story</a>
+                        <a href="# "><span class="glyphicon glyphicon-comment "></span> 7 Comments</a>
+                        <a href="# "><span class="glyphicon glyphicon-share "></span> 67 Shares</a>
+                    </div>
+                </div>
+                <div class="text-center ">
+                    <h4>
+                    <a href="#"><span class="glyphicons glyphicons-plus-sign"></span> ver todas 
+                    las noticias</a></h4>
+                </div>
+            </div>
+            <hr/>
+        </div>
+        <div id="cosotwitter">
+            <a class="twitter-timeline col-md-3" href="https://twitter.com/hashtag/bernesemountaindog" data-widget-id="740279717996208128" width="30%">Tweets sobre #bernesemountaindog</a>
+            <script>
+            ! function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+            </script>
+        </div>
+        <div class="container text-center">
+            <hr />
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a href="#">Home</a>
+                            </li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Product for Mac</a></li>
+                            <li><a href="#">Product for Windows</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Web analytics</a></li>
+                            <li><a href="#">Presentations</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#">Product Help</a></li>
+                            <li><a href="#">Developer API</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="nav nav-pills nav-justified">
+                        <li><a href="/">© 2013 Company Name.</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <hr />
-        <div class="row">
-            <div class="col-xs-12">
-                <h2>Article Title</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-                </p>
-                <div class="text-center">
-                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
-                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 7 Comments</a>
-                    <a href="#"><span class="glyphicon glyphicon-share"></span> 67 Shares</a>
-                </div>
-            </div>
-        </div>
-        <hr />
-    </div>
-    <a class="twitter-timeline col-md-3" href="https://twitter.com/hashtag/bernesemountaindog" data-widget-id="740279717996208128" width="25%">Tweets sobre #bernesemountaindog</a>
-    <script>
-    ! function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-            p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = p + "://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }
-    }(document, "script", "twitter-wjs");
-    </script>
-    <!-- /container -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-    </script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X', 'auto');
-    ga('send', 'pageview');
-    </script>
+        <!-- /container -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js "></script>
+        <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js "><\/script>')
+        </script>
+        <script src="js/vendor/bootstrap.min.js "></script>
+        <script src="js/main.js "></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+        </script>
 </body>
 
 </html>
